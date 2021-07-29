@@ -20,7 +20,7 @@ public class Checkout {
                 //e.g this would be true if there are now 3 occurrences of A in the basket, and A has a 3 for 130 special price
                 if(specialPricing.containsKey(item) 
                 && specialPricing.get(item).get(itemOccurences.get(item)) != null) {
-                    totalDiscount += (normalPricing.get(item) * itemOccurences.get(item)) - specialPricing.get(item).get(itemOccurences.get(item));
+                    totalDiscount += calculateDiscount(normalPricing, specialPricing, itemOccurences, item);
                     itemOccurences.put(item, 0);
                 }
             }
@@ -34,4 +34,9 @@ public class Checkout {
         return totalCost - totalDiscount;
     }
 
+    private Integer calculateDiscount (HashMap<String, Integer> normalPricing, 
+        HashMap<String, HashMap<Integer, Integer>> specialPricing, HashMap<String, Integer> itemOccurences,
+        String item) {
+            return (normalPricing.get(item) * itemOccurences.get(item)) - specialPricing.get(item).get(itemOccurences.get(item));
+    }
 }

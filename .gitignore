@@ -1,0 +1,17 @@
+.classpath
+.project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+target/itv-1.jar
+target/classes/com/example/App.class
+target/classes/com/example/Checkout.class
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/surefire-reports/com.example.CheckoutTest.txt
+target/surefire-reports/TEST-com.example.CheckoutTest.xml
+target/test-classes/com/example/CheckoutTest.class
